@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8cd7fdeeb613dc07fd7fb9584a0e631",
+    "content-hash": "98ed13b9689e0532c1001176d1765319",
     "packages": [
         {
             "name": "freyo/flysystem-qcloud-cos-v5",
@@ -494,40 +494,34 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.15.1",
+            "version": "2.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.tencent.com/repository/composer/league/flysystem/3.15.1/league-flysystem-3.15.1.zip",
-                "reference": "a141d430414fcb8bf797a18716b09f759a385bed",
+                "url": "https://mirrors.tencent.com/repository/composer/league/flysystem/2.5.0/league-flysystem-2.5.0.zip",
+                "reference": "8aaffb653c5777781b0f7f69a5d937baf7ab6cdb",
                 "shasum": ""
             },
             "require": {
-                "league/flysystem-local": "^3.0.0",
+                "ext-json": "*",
                 "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
+                "php": "^7.2 || ^8.0"
             },
             "conflict": {
-                "aws/aws-sdk-php": "3.209.31 || 3.210.0",
-                "guzzlehttp/guzzle": "<7.0",
-                "guzzlehttp/ringphp": "<1.1.1",
-                "phpseclib/phpseclib": "3.0.15",
-                "symfony/http-client": "<5.2"
+                "guzzlehttp/ringphp": "<1.1.1"
             },
             "require-dev": {
                 "async-aws/s3": "^1.5",
-                "async-aws/simple-s3": "^1.1",
-                "aws/aws-sdk-php": "^3.220.0",
+                "async-aws/simple-s3": "^1.0",
+                "aws/aws-sdk-php": "^3.132.4",
                 "composer/semver": "^3.0",
                 "ext-fileinfo": "*",
                 "ext-ftp": "*",
-                "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.5",
+                "friendsofphp/php-cs-fixer": "^3.2",
                 "google/cloud-storage": "^1.23",
-                "microsoft/azure-storage-blob": "^1.1",
-                "phpseclib/phpseclib": "^3.0.14",
+                "phpseclib/phpseclib": "^2.0",
                 "phpstan/phpstan": "^0.12.26",
-                "phpunit/phpunit": "^9.5.11",
-                "sabre/dav": "^4.3.1"
+                "phpunit/phpunit": "^8.5 || ^9.4",
+                "sabre/dav": "^4.1"
             },
             "type": "library",
             "autoload": {
@@ -558,47 +552,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2023-05-04T09:04:26+00:00"
-        },
-        {
-            "name": "league/flysystem-local",
-            "version": "3.15.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://mirrors.tencent.com/repository/composer/league/flysystem-local/3.15.0/league-flysystem-local-3.15.0.zip",
-                "reference": "543f64c397fefdf9cfeac443ffb6beff602796b3",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "league/flysystem": "^3.0.0",
-                "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "League\\Flysystem\\Local\\": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frankdejonge.nl"
-                }
-            ],
-            "description": "Local filesystem adapter for Flysystem.",
-            "keywords": [
-                "Flysystem",
-                "file",
-                "files",
-                "filesystem",
-                "local"
-            ],
-            "time": "2023-05-02T20:02:14+00:00"
+            "time": "2022-09-17T21:02:32+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -1409,6 +1363,42 @@
                 "thinkphp"
             ],
             "time": "2023-06-30T10:27:53+00:00"
+        },
+        {
+            "name": "topthink/think-filesystem",
+            "version": "v2.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.tencent.com/repository/composer/topthink/think-filesystem/v2.0.2/topthink-think-filesystem-v2.0.2.zip",
+                "reference": "c08503232fcae0c3c7fefae5e6b5c841ffe09f2f",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^2.0",
+                "topthink/framework": "^6.1|^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "mockery/mockery": "^1.2",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "think\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "yunwuxin",
+                    "email": "448901948@qq.com"
+                }
+            ],
+            "description": "The ThinkPHP6.1 Filesystem Package",
+            "time": "2023-02-08T01:23:42+00:00"
         },
         {
             "name": "topthink/think-helper",

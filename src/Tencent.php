@@ -18,7 +18,7 @@ use Qcloud\Cos\Client;
  */
 class Tencent extends \think\filesystem\Driver
 {
-    protected function createAdapter (): \League\Flysystem\AdapterInterface
+    protected function createAdapter (): \League\Flysystem\FilesystemAdapter
     {
         return new Adapter(new Client($this->config),$this->config);
     }
