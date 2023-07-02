@@ -1,11 +1,14 @@
-# thinkphp6 腾讯云oss
+# thinkphp 腾讯云oss
 
 基于 [freyo/flysystem-qcloud-cos-v5](https://github.com/freyo/flysystem-qcloud-cos-v5) 轻度封装tp
 ## 安装
 
 ---
 ```shell
-composer require death_satan/thinkphp-tencent-oss
+# thinkphp6
+composer require death_satan/thinkphp-tencent-oss ^6.0
+# thinkphp8
+composer require death_satan/thinkphp-tencent-oss ^8.0
 ```
 ---
 ## 初始化
