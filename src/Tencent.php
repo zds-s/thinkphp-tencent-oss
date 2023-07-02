@@ -9,6 +9,7 @@
 namespace think\filesystem\driver;
 
 use Freyo\Flysystem\QcloudCOSv5\Adapter;
+use League\Flysystem\FilesystemAdapter;
 use Qcloud\Cos\Client;
 
 /**
@@ -18,7 +19,7 @@ use Qcloud\Cos\Client;
  */
 class Tencent extends \think\filesystem\Driver
 {
-    protected function createAdapter (): \League\Flysystem\AdapterInterface
+    protected function createAdapter (): FilesystemAdapter
     {
         return new Adapter(new Client($this->config),$this->config);
     }

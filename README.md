@@ -5,7 +5,10 @@
 
 ---
 ```shell
-composer require death_satan/thinkphp-tencent-oss
+# thinkphp6
+composer require death_satan/thinkphp-tencent-oss ^6.0
+# thinkphp8
+composer require death_satan/thinkphp-tencent-oss ^8.0
 ```
 ---
 ## 初始化
